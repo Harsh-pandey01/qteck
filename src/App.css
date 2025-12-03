@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss" ;
+
+@custom-variant dark (&:where(.dark, .dark *));
+:root{
+  --bg-primary : var(--color-zinc-50) ;
+  --bg-secondry : var(--color-zinc-100) ;
+  --color-text : var(--color-black) ;
+  --color-textSec : var(--color-zinc-700) ;
+  --color-border : var(--color-zinc-400) ;
+}
+
+.dark{
+  --bg-primary : var(--color-neutral-950) ;
+  --bg-secondry : var(--color-neutral-900) ;
+  --color-text : var(--color-white) ;
+  --color-textSec : var(--color-zinc-400) ;
+  --color-border : var(--color-zinc-700) ;
+}
+
+@theme inline{
+  --color-secondry : var(--bg-secondry) ;
+  --color-primary : var(--bg-primary) ;
+  --color-text : var(--color-text) ;
+  --color-textSec : var(--color-textSec) ;
+  --color-border : var(--color-border);
+}
+
+@theme {
+  --font-robo : "Roboto" , sans-serif ;
+  --font-inter : "Inter" , sans-serif ;
+  --font-grot : "Hanken Grotesk", sans-serif;
+  --font-text : "Raleway", sans-serif;
+}
+
+.wrapper{
+  max-width: 1240px;
+  margin: 0 auto;
+}
