@@ -1,4 +1,4 @@
-import { AnimatePresence, motion, useAnimate } from "motion/react";
+import { motion, useAnimate } from "motion/react";
 import { useEffect } from "react";
 
 function Loader() {
